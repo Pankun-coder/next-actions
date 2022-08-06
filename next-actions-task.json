@@ -1,0 +1,26 @@
+{
+  "family": "NEXTJS-Actions",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
+    {
+      "name": "next-actions",
+      "image": "next-actions",
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true
+    }
+  ],
+  "runtimePlatform": {
+    "cpuArchitecture": "X86_64",
+    "operatingSystemFamily": "LINUX"
+  },
+  "requiresCompatibilities": ["FARGATE"],
+  "executionRoleArn": "ecsTaskExecutionRole",
+  "cpu": "256",
+  "memory": "512"
+}
