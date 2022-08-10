@@ -16,7 +16,7 @@
       "secrets": [
         {
           "name": "NEXT_PUBLIC_TEST_ENV",
-          "valueFrom": "test-env"
+          "valueFrom": "my-secret"
         }
       ]
     }
