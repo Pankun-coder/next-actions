@@ -15,7 +15,7 @@
       "essential": true,
       "secrets": [
         {
-          "name": "TEST_ENV",
+          "name": "NEXT_PUBLIC_TEST_ENV",
           "valueFrom": "test-env"
         }
       ]
