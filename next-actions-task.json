@@ -12,7 +12,13 @@
           "protocol": "tcp"
         }
       ],
-      "essential": true
+      "essential": true,
+      "secrets": [
+        {
+          "name": "TEST_ENV",
+          "valueFrom": "test-env"
+        }
+      ]
     }
   ],
   "runtimePlatform": {
