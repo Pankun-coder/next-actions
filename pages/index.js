@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        <p>{Process.env.TEST_ENV}</p>
+        <p>{process.env.TEST_ENV}</p>
 
         <p className={styles.description}>
           Get started by editing{" "}
