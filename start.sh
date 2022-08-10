@@ -1,3 +1,3 @@
-export NEXT_PUBLIC_THISISTEST=lebie
+#!/bin/bash
 yarn build
 yarn start -p 80
