@@ -15,7 +15,7 @@ export default function Users() {
       <div>
         {data.map((value, index) => {
           return (
-            <div>
+            <div key={value.id}>
               {value.name}, {value.age}
             </div>
           );
