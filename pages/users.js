@@ -3,7 +3,8 @@ import useSWR from "swr";
 export default function Users() {
   const fetcher = (url) => axios.get(url).then((res) => res.data);
   const { data, error } = useSWR(
-    "http://rails-load-balancer-e0ef7ce9bd722f97.elb.ap-northeast-1.amazonaws.com/users"
+    "http://rails-load-balancer-e0ef7ce9bd722f97.elb.ap-northeast-1.amazonaws.com/users",
+    fetcher
   );
   if (error) {
     return <div>error</div>;
