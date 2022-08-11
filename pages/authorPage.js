@@ -1,3 +1,3 @@
-export default function () {
+export default function authorPage() {
   return <div>hola todos</div>;
 }
